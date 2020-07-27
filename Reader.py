@@ -92,10 +92,10 @@ class Reader:
             #Feeding each person's info into the JSON
             json = json + '{'
             json = json + '"' + row[0] + '":{'
-            json = json + '"nome":"' + row[1] + '", '
-            json = json + '"sobrenome":"' + row[2] + '", '
-            json = json + '"nascimento":"' + row[3] + '", '
-            json = json + '"genero":"' + row[4] + '"}'
+            json = json + '"nome": "' + row[1] + '", '
+            json = json + '"sobrenome": "' + row[2] + '", '
+            json = json + '"nascimento" :' + row[3] + ', '
+            json = json + '"genero": "' + row[4] + '"}'
             json = json + '}, '
 
         #In the last person it is not necessary to have the ", " string, so ignore it
